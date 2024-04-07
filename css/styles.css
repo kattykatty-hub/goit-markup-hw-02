@@ -1,0 +1,283 @@
+:root {
+  --color-iris: #4D5AE5;
+  --color-ocean: #404BBF;
+  --color-navy-blue: #2E2F42;
+  --color-green: #31D0AA;
+  --color-slate: #434455;
+  --light-slate:#8E8F99;
+  --cornflower:#E7E9FC;
+  --color-cloud: #F4F4FD;
+  --color-navy-blue-modal: #2E2F42;
+  --color-grey: #2E2F42;
+  --color-white: #FFFFFF;
+  --color-dairy: #FCFCFC;
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--color-slate);
+    font-weight: normal; 
+    font-size: 16px; 
+    line-height: 24px; 
+    letter-spacing: 2%; 
+}
+ul {
+    list-style-type: none;
+}
+nav ul li a {
+    color: var(--color-navy-blue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.32px;
+}
+
+address ul li a {
+    color: var(--color-slate);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.32px;
+}
+address ul li a:hover, address ul li a:focus {
+    color: var(--color-ocean)
+}
+
+
+/* Застосування стилів до тексту */
+h1 {
+    text-align: center;
+    font-weight: bold; /* Жирний шрифт */
+    font-size: 56px; /* Розмір шрифту 56 пікселів */
+    letter-spacing: 2%;
+    line-height: 60px; /* Висота рядка 60 пікселів */
+}
+
+h2 {
+    font-weight: bold; /* Жирний шрифт */
+    font-size: 36px; /* Розмір шрифту 56 пікселів */
+    letter-spacing: 2%; /* Міжсимвольний інтервал 2% */
+}
+
+h3 {
+    font-weight:medium; 
+    font-size: 20px; 
+    letter-spacing: 2%; 
+}
+
+/* Small text */
+.small-text {
+    font-weight: 400; /* Regular */
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 4%;
+  }
+  
+  /* Button text */
+  .button-text {
+   letter-spacing: 4%;
+  }
+  
+  /* Link text */
+  .link-text {
+    font-weight: 400; 
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 4%;
+    text-decoration: underline;
+  }
+  
+
+.hero {
+    width: 1440px;
+    height: 600px;
+    background: var(--color-navy-blue, #2E2F42);
+}
+
+header a {
+    text-decoration: none;
+}
+
+#logo-header {
+    text-decoration: none; /* Remove default underline */
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px; /* 116.667% */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+#logo-header span:first-child {
+    width: 44px; /* Width for "Web" */
+    color: var(--color-iris);
+}
+
+#logo-header span:last-child {
+    width: 71px; /* Width for "Studio" */
+    color: var(--color-navy-blue);
+}
+
+footer{
+    width: 1440px;
+    height: 312px;
+    background: var(--color-navy-blue);
+}
+#logo-footer {
+    background: var(--color-navy-blue);
+    text-decoration: none; /* Remove default underline */
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px; /* 116.667% */
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+#logo-footer span:first-child {
+    width: 44px; 
+    color: var(--color-iris);
+}
+
+#logo-footer span:last-child {
+    width: 71px; 
+    color: var(--color-cloud);
+}
+footer p {
+    color:  var(--color-cloud);
+}
+.order-button {
+    background: var(--color-iris);
+    color: var(--color-white);
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--color-iris);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.our-team {
+    width: 1440px;
+    height: 732px;
+    background: var(--color-cloud);
+}
+.our-team {
+    display: inline-flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--color-white);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+
+/* Застосування стилів до тексту */
+
+button {
+    font-weight: 500; /* Середній шрифт */
+    font-size: 16px; /* Розмір шрифту 16 пікселів */
+    line-height: 24px; /* Висота рядка 24 пікселів */
+    letter-spacing: 4%; /* Міжсимвольний інтервал 4% */
+}
+
+
+button:hover,
+button:focus
+{
+    color: var(--color-white);
+    text-decoration: underline;
+    background: var(--color-ocean);
+}
+
+ul li button {
+    color: var(--color-iris);
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--color-cloud);
+    padding: 8px 16px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Ensure cursor changes to pointer on hover */
+    outline: none; /* Remove default button outline */
+}
+
+/* Hover effect */
+ul li button:hover {
+    background: var(--color-iris); /* Apply hover color */
+    color: var(--color-white) ;
+}
+
+/* Active effect (when button is clicked) */
+ul li button:active {
+    transform: translateY(1px); /* Apply slight downward shift */
+}
+
+.email:hover {
+    color: var(--color-ocean);
+}
+
+
+.project-card{
+    min-width:360px; /*px, % em, rem*/
+    min-height:300px;
+
+}
+
+.card-content-img {
+    min-width:360px; /*px, % em, rem*/
+    min-height:300px;
+}
+
+
+/* -------- Color Classes --------*/
+.color-primary-brand {
+    color: var(--color-iris); /* Iris color */
+}
+
+.color-pressed-state {
+    color: var(--color-ocean); /* Primary Brand color */
+}
+
+.dark {
+    color: var(--color-navy-blue); /* Pressed state color */
+
+}
+
+.color-success {
+  color: var(--color-green); /* Dark color */
+}
+
+.color-text {
+  color: var(--color-slate); /* Success color */
+}
+
+.color-subtle-text {
+  color: var(--light-slate); /* Text color */
+}
+
+.color-accent {
+  color: var(--cornflower); /* Subtle Text color */
+}
+
+.color-light {
+  color: var(--color-cloud); /* Accent color */
+}
+
+.color-modal-overlay {
+  color: var(--color-navy-blue-modal); /* Light color */
+}
+
+.color-hero-background {
+    color: var(--color-grey); /* Modal overlay color */
+}
+
+.color-white-background {
+  color: var(--color-white); /* Hero background color */
+}
+
+.color-modal-background {
+    color: var(--color-dairy); /* White background color *
+}
+/* -------- Color Classes --------*/
