@@ -12,6 +12,9 @@
   --color-white: #FFFFFF;
   --color-dairy: #FCFCFC;
 }
+* {
+    margin: 0;
+}
 
 body {
     font-family: 'Roboto';
@@ -39,8 +42,27 @@ button:focus
     color: var(--color-white);
     background: var(--color-ocean);
 }
-
-
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 76px;
+}
+.menu-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menu-info{
+    display: flex;
+    align-items: center;
+    gap: 40px;  
+}
+.header{
+    padding: 25px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .nav-item a {
     color: var(--color-navy-blue);
     font-size: 16px;
@@ -113,8 +135,79 @@ h3 {
 
 .hero {
     background: var(--color-navy-blue, #2E2F42);
+    padding: 188px 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 120px;
 }
+.info-title{
+    display: none;
+}
+.info {
+    padding: 0 156px;
+    margin-bottom: 120px;
+}
+.info-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ .info-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    max-height: 72px;
+    max-width: 264px;
+ }
+ .wrapper {
+    padding:0 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:72px;
+    margin-bottom: 120px;
+ }
+ .wrapper-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+ }
+ .our-team{
+    background-color:var(--CLOUD, #F4F4FD);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+    padding: 120px 156px;
+ }
+ .our-team-list{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+ }
+ .our-team-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    background-color: var(--color-white);
 
+ }
+ .our-team-img{
+    margin-bottom: 32px;
+ }
+ .our-team-name{
+    margin-bottom: 8px;
+ }
+ .our-team-p{
+    margin-bottom: 32px;
+ }
 header a {
     text-decoration: none;
 }
@@ -138,11 +231,36 @@ header a {
     width: 71px; /* Width for "Studio" */
     color: var(--color-navy-blue);
 }
+.footer{
+    padding: 100px 1000px 100px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 17px;
 
+}
 footer{
     background: var(--color-navy-blue);
 
 }
+.header--margin{
+    margin-bottom: 96px;
+}
+.filters{
+    padding: 0 156px;
+    display: flex;
+    flex-direction: column;
+    gap:72px;
+    align-items: center;
+    margin-bottom: 120px;
+
+}
+.filter-list{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.
 .logo-footer {
     background: var(--color-navy-blue);
     text-decoration: none; /* Remove default underline */
@@ -177,21 +295,6 @@ footer p {
     background: var(--color-iris);
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.our-team {
-    width: 1440px;
-    height: 732px;
-    background: var(--color-cloud);
-}
-.our-team {
-    padding-bottom: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    border-radius: 0px 0px 4px 4px;
-    background: var(--color-white);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -232,8 +335,42 @@ footer p {
     min-width:360px; /*px, % em, rem*/
     min-height:300px;
 
-}
 
+}
+.project-link {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-decoration: none;
+}
+.project-p {
+    color: var(--SLATE, #434455);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 32px;
+}
+.project-cards-holder{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.project-title{
+    color: var(--NAVY-BLUE, #2E2F42);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.4px;
+}
+.project-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    padding: 0 16px;
+
+}
 .card-content-img {
     min-width:360px; /*px, % em, rem*/
     min-height:300px;
